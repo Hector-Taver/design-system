@@ -12,7 +12,7 @@ export default {
       <TextInput.Icon>
         <EnvelopeSimple />
       </TextInput.Icon>,
-      <TextInput.Input placeholder="Type your e-mail address" />,
+      <TextInput.Input type="email" placeholder="Type your e-mail address" />,
     ],
   },
   argTypes: {
@@ -32,13 +32,13 @@ export const PasswordInput: StoryObj<TextInputRootProps> = {
       <TextInput.Icon>
         <Lock />
       </TextInput.Icon>,
-      <TextInput.Input placeholder="*********" />,
+      <TextInput.Input type="password" placeholder="*********"  />,
     ],
   },
 };
 
 export const WithoutIcon: StoryObj<TextInputRootProps> = {
   args: {
-    children: <TextInput.Input placeholder="Input without icon" />,
+    children: <TextInput.Input type="text" placeholder="Input without icon" />,
   },
 };
